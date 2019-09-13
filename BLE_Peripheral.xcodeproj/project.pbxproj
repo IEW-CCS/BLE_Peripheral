@@ -11,6 +11,7 @@
 		36C10BCC230B7EA800BA0019 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C10BCB230B7EA800BA0019 /* ViewController.swift */; };
 		36C10BCE230B7EAA00BA0019 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36C10BCD230B7EAA00BA0019 /* Assets.xcassets */; };
 		36C10BD1230B7EAA00BA0019 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36C10BCF230B7EAA00BA0019 /* Main.storyboard */; };
+		36CF204A232BC71A003129FF /* CommonStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CF2049232BC71A003129FF /* CommonStruct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		36C10BD0230B7EAA00BA0019 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		36C10BD2230B7EAA00BA0019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36C10BD3230B7EAA00BA0019 /* BLE_Peripheral.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BLE_Peripheral.entitlements; sourceTree = "<group>"; };
+		36CF2049232BC71A003129FF /* CommonStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonStruct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				36C10BCF230B7EAA00BA0019 /* Main.storyboard */,
 				36C10BD2230B7EAA00BA0019 /* Info.plist */,
 				36C10BD3230B7EAA00BA0019 /* BLE_Peripheral.entitlements */,
+				36CF2049232BC71A003129FF /* CommonStruct.swift */,
 			);
 			path = BLE_Peripheral;
 			sourceTree = "<group>";
@@ -95,6 +98,11 @@
 				TargetAttributes = {
 					36C10BC5230B7EA800BA0019 = {
 						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -134,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36C10BCC230B7EA800BA0019 /* ViewController.swift in Sources */,
+				36CF204A232BC71A003129FF /* CommonStruct.swift in Sources */,
 				36C10BCA230B7EA800BA0019 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
